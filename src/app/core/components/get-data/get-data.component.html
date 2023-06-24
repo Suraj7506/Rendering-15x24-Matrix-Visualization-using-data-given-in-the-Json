@@ -1,0 +1,8 @@
+<div class="matrix-container">
+    <div *ngFor="let row of matrixData; let i = index" class="matrix-row">
+      <div *ngFor="let hour of row.hours; let i = index" class="matrix-box" [style.background-color]="getBoxColor(hour.record_count)">
+        <!-- Render other content inside the box as needed -->
+      </div>
+    </div>
+  </div>
+  
